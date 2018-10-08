@@ -1,0 +1,29 @@
+Here are some useful guidelines for implementing the hashCode method correctly.
+
+Store an arbitrary non-zero constant integer value (say 7) in an int variable, called hash.
+
+Involve significant variables of your object in the calculation of the hash code, all the variables that are part of equals comparison should be considered for this. Compute an individual hash code int var_code for each variable var as follows -
+
+If the variable(var) is byte, char, short or int, then var_code = (int)var;
+
+If the variable(var) is long, then var_code = (int)(var ^ (var >>> 32));
+
+If the variable(var) is float, then var_code = Float.floatToIntBits(var);
+
+If the variable(var) is double, then -
+long bits = Double.doubleToLongBits(var);
+var_code = (int)(bits ^ (bits >>> 32));
+
+If the variable(var) is boolean, then var_code = var ? 1 : 0;
+
+If the variable(var) is an object reference, then check if it is null, if yes then var_code = 0; otherwise invoke the hashCode method recursively on this object reference to get the hash code. This can be simplified and given as -
+var_code = (null == var ? 0 : var.hashCode());
+
+Combine this individual variable hash code var_code in the original hash code hash as follows - 
+hash = 31 * hash + var_code;
+
+Follow these steps for all the significant variables and in the end return the resulting integer hash.
+
+Lastly, review your hashCode method and check if it is returning equal hash codes for equal objects. Also, verify that the hash codes returned for the object are consistently the same for multiple invocations during the same execution.
+
+The guidelines provided here for implementing equals and hashCode methods are merely useful as guidelines, these are not absolute laws or rules. Nevertheless, following them while implementing these two methods will certainly give you correct and consistent results.

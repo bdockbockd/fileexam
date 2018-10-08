@@ -1,0 +1,14 @@
+-- All Employees in the Store--
+- [MANAGER] Name: aum 1, salaryPerHour: 500.0, workHours: 200.0, bonus: 1000.0
+- [MANAGER] Name: aum 2, salaryPerHour: 1000.0, workHours: 200.0, bonus: 2000.0
+- [PARTTIME] Name: aum 3, salaryPerHour: 50.0, workHours: 0.0, bonus: 0.0
+- [PARTTIME] Name: aum 4, salaryPerHour: 50.0, workHours: 0.0, bonus: 0.0
+- [SALES ASSOCAITE] Name: aum 5, salaryPerHour: 200.0, workHours: 200.0, salesRate: 50.0, bonus: 12000.0
+- [SALES ASSOCAITE] Name: aum 6, salaryPerHour: 200.0, workHours: 200.0, salesRate: 10.0, bonus: 400.0
+-- All Employees's Salaries and Bonus--
+- Name: aum 1 position: Manager, salary: 101000.0
+- Name: aum 2 position: Manager, salary: 202000.0
+- Name: aum 3 position: partTime, salary: 0.0
+- Name: aum 4 position: partTime, salary: 0.0
+- Name: aum 5 position: SalesAssociate, salary: 52000.0
+- Name: aum 6 position: SalesAssociate, salary: 40400.0

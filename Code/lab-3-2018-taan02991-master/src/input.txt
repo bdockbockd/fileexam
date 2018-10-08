@@ -1,0 +1,7 @@
+---Employee List---
+manager, aum 1, 500
+manager, aum 2, 1000
+parttime, aum 3, 50
+parttime, aum 4, 50
+sale, aum 5, 200, 0.5
+sale, aum 6, 200, 0.1
